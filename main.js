@@ -12,6 +12,6 @@ await rimraf('./foobar');
 //     depth: 1,
 // });
 
-$`git clone ssh://git@bitbucket.collaboration-man.com:7999/riostart/web-starter-template.git foobar`;
+await $`git clone ssh://git@bitbucket.collaboration-man.com:7999/riostart/web-starter-template.git foobar`;
 
 await rimraf('./foobar/.git');
