@@ -1,19 +1,17 @@
-#!/usr/bin/env node
+#!/usr/bin/env zx
 
-import fs from 'node:fs';
-
-import git from 'isomorphic-git';
-import http from 'isomorphic-git/http/node';
 import { rimraf } from 'rimraf';
 
 await rimraf('./foobar');
 
-await git.clone({
-    fs,
-    http,
-    dir: './foobar',
-    url: 'https://github.com/rio-cloud/create-frontend',
-    depth: 1,
-});
+// await git.clone({
+//     fs,
+//     http,
+//     dir: './foobar',
+//     url: 'https://github.com/rio-cloud/create-frontend',
+//     depth: 1,
+// });
+
+$`git clone ssh://git@bitbucket.collaboration-man.com:7999/riostart/web-starter-template.git foobar`;
 
 await rimraf('./foobar/.git');
