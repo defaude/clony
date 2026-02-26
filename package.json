@@ -1,0 +1,14 @@
+{
+    "name": "clony",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "dependencies": {
+        "isomorphic-git": "1.37.2"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "2.4.4",
+        "@rio-cloud/biome-config": "1.2.0"
+    }
+}
